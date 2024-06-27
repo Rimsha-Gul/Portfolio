@@ -1,11 +1,13 @@
 import Hero from "@/sections/Hero";
-import About from "@/sections/About";
+import Services from "@/sections/Services";
+import Portfolio from "@/sections/Portfolio";
 
 export default function Home() {
   return (
     <main className="flex flex-col items-center justify-between w-full min-h-screen">
       <Hero />
-      <About />
+      <Services />
+      <Portfolio />
     </main>
   );
 }

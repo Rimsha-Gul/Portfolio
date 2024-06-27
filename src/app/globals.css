@@ -16,6 +16,26 @@
   }
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-button {
+  display: block;
+  height: 0px;
+  border-radius: 0px;
+  background-color: #313741;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #00d7bb;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #313741;
+}
+
 html,
 body {
   margin: 0;
@@ -52,9 +72,77 @@ body {
   }
 
   .text-gradient {
-    background: linear-gradient(to right, #00d7c5, #0bef9c);
+    background: linear-gradient(to right, #0bef9c, #00d7c5);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
   }
+}
+
+@keyframes expandCenter {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.icon-stroke {
+  stroke-width: 1.5px;
+}
+
+.icon-stroke-variant {
+  stroke-width: 0.8px;
+}
+
+.portfolio-hover {
+  border: 10px solid #a6bcc0;
+  -webkit-box-shadow: 1px 6px 24px #3e3e3e;
+  box-shadow: 1px 6px 24px #3e3e3e;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  opacity: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.portfolio-hover:hover {
+  opacity: 1;
+}
+
+.portfolio-hover::after {
+  background-color: rgba(255, 255, 255, 0.9);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  width: 100%;
+  z-index: -1;
+}
+
+.portfolio-hover:hover::after {
+  transform: scale(1);
+}
+
+.slick-dots li button:before {
+  color: #2e8555 !important;
+  transition: color 0.3s ease;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #2dd4bf !important;
+}
+
+.slick-dots li button:hover:before {
+  color: #16a085 !important;
 }
