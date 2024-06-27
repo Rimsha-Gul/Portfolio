@@ -1,10 +1,9 @@
 "use client";
 
-import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import { FaGlobe, FaLaptopCode, FaPalette } from "react-icons/fa";
 
-const About = () => {
+const Services = () => {
   const skills = [
     {
       title: "Web Development",
@@ -28,33 +27,30 @@ const About = () => {
 
   return (
     <section
-      id="about"
-      className="w-full h-screen py-20 bg-secondary text-white flex justify-center items-center relative overflow-hidden"
-      style={{
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        zIndex: 1,
-      }}
+      id="services"
+      className="w-full py-20 px-4 bg-secondary text-white flex justify-center items-center relative overflow-hidden"
     >
       <div className="container mx-auto flex flex-col items-center">
-        <h2 className="text-5xl text-gradient uppercase font-bold mb-16">
+        <h2 className="text-3xl xxs:text-4xl md:text-5xl text-center text-gradient uppercase font-bold pb-16">
           Services
         </h2>
-        <div className="flex justify-center gap-4 w-full">
+        <div className="flex flex-col lg:flex-row justify-center gap-4 w-full">
           {skills.map((skill, index) => (
             <ScrollAnimation
               key={index}
               animateIn="fadeInUp"
               duration={1}
-              className="p-4 flex-1 max-w-lg flex"
+              className="p-2 flex-1 max-w-full lg:max-w-lg flex"
             >
-              <div className="p-4 flex-1 max-w-lg flex">
-                <div className="h-full flex flex-col justify-start bg-gray-800 px-10 py-12 rounded-lg text-center border border-white shadow-gradient-secondary">
-                  <div className="flex justify-center items-center text-8xl text-secondary mb-12">
+              <div className="flex-1 flex">
+                <div className="h-full flex flex-col justify-start bg-gray-800 px-4 py-6 xl:py-12 rounded-lg text-center border border-white shadow-gradient-secondary">
+                  <div className="flex justify-center items-center text-6xl xl:text-8xl text-secondary pb-6 xl:pb-12">
                     {skill.icon}
                   </div>
-                  <h3 className="text-3xl font-medium mb-8">{skill.title}</h3>
-                  <p className="text-2xl">{skill.description}</p>
+                  <h3 className="text-2xl xl:text-3xl font-medium pb-4 xl:pb-8">
+                    {skill.title}
+                  </h3>
+                  <p className="text-sm xl:text-2xl">{skill.description}</p>
                 </div>
               </div>
             </ScrollAnimation>
@@ -65,4 +61,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Services;
