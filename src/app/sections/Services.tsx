@@ -1,7 +1,7 @@
 "use client";
 
-import ScrollAnimation from "react-animate-on-scroll";
 import { FaGlobe, FaLaptopCode, FaPalette } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Services = () => {
   const skills = [
@@ -36,10 +36,11 @@ const Services = () => {
         </h2>
         <div className="flex flex-col lg:flex-row justify-center gap-4 w-full">
           {skills.map((skill, index) => (
-            <ScrollAnimation
+            <motion.div
               key={index}
-              animateIn="fadeInUp"
-              duration={1}
+              initial={{ opacity: 0, y: index === 1 ? -20 : 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
               className="p-2 flex-1 max-w-full lg:max-w-lg flex"
             >
               <div className="flex-1 flex">
@@ -53,7 +54,7 @@ const Services = () => {
                   <p className="text-sm xl:text-2xl">{skill.description}</p>
                 </div>
               </div>
-            </ScrollAnimation>
+            </motion.div>
           ))}
         </div>
       </div>

@@ -1,6 +1,7 @@
 import Hero from "@/sections/Hero";
 import Services from "@/sections/Services";
 import Portfolio from "@/sections/Portfolio";
+import Experience from "@/sections/Experience";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <Services />
       <Portfolio />
+      <Experience />
     </main>
   );
 }
