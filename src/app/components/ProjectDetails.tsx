@@ -36,7 +36,7 @@ const ProjectDetails: React.FC<ModalProps> = ({ onClose, project, isOpen }) => {
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.9 }}
           transition={{ duration: 0.3 }}
-          className="bg-secondary px-2 sm:px-4 xl:px-8 pt-12 pb-8 rounded-lg w-full min-h-full flex flex-col lg:flex-row gap-8 lg:gap-4 relative"
+          className="bg-primary px-2 sm:px-4 xl:px-8 pt-12 pb-8 rounded-lg w-full min-h-full flex flex-col lg:flex-row gap-8 lg:gap-4 relative"
         >
           <CloseButton
             as="button"

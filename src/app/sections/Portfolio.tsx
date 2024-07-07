@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { projects } from "@/constants/projects";
+import { projects } from "@/constants";
 import ScrollAnimation from "react-animate-on-scroll";
 import { Project } from "@/types/project";
 import ProjectDetails from "@/components/ProjectDetails";
