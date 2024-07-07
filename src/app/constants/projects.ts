@@ -1,4 +1,4 @@
-import { Project } from "@/types/project";
+import { Project } from "@/types";
 
 export const projects: Project[] = [
   {
@@ -104,7 +104,7 @@ export const projects: Project[] = [
   },
   {
     title: "Arcompsol",
-    description: "Empowering Businesses through Digital Transformation",
+    description: "Company Website",
     coverImage: "/portfolio-images/arcompsol/main.png",
     images: [
       "/portfolio-images/arcompsol/1.png",

@@ -30,7 +30,7 @@ const BackToTopButton: React.FC = () => {
   }, []);
 
   return (
-    <div className="fixed bottom-4 right-4">
+    <div className="fixed bottom-6 right-6">
       <AnimatePresence>
         {isVisible && (
           <motion.button
@@ -41,9 +41,9 @@ const BackToTopButton: React.FC = () => {
             transition={{ duration: 0.4 }}
             type="button"
             onClick={scrollToTop}
-            className="p-4 rounded-full bg-gradient-back-to-top text-white shadow-md hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+            className="p-3.5 rounded-full bg-gradient-back-to-top text-white shadow-md hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
           >
-            <HiChevronUp className="w-6 h-6 icon-stroke" />
+            <HiChevronUp className="w-4 h-4 icon-stroke" />
           </motion.button>
         )}
       </AnimatePresence>

@@ -55,19 +55,19 @@ const Portfolio = () => {
                     <div className="self-end flex space-x-2">
                       <div
                         onClick={() => handleInfoClick(project)}
-                        className="flex items-center justify-center p-2 border-2 border-primary rounded-full text-primary hover:bg-turquoise hover:text-white hover:border-secondary cursor-pointer transition-colors duration-300"
+                        className="flex items-center justify-center p-2 border-2 border-secondary rounded-full text-secondary hover:bg-turquoise hover:text-white cursor-pointer transition-colors duration-300"
                       >
                         <TiInfoLarge size={24} />
                       </div>
                       <div
                         onClick={() => handleIconClick(project.liveUrl)}
-                        className="flex items-center justify-center p-2 border-2 border-primary rounded-full text-primary hover:bg-turquoise hover:text-white hover:border-secondary cursor-pointer transition-colors duration-300"
+                        className="flex items-center justify-center p-2 border-2 border-secondary rounded-full text-secondary hover:bg-turquoise hover:text-white cursor-pointer transition-colors duration-300"
                       >
                         <PiLinkSimpleBold size={24} />
                       </div>
                     </div>
                     <div>
-                      <h3 className="text-xl lg:text-2xl uppercase font-semibold text-primary pb-1">
+                      <h3 className="text-xl lg:text-2xl uppercase font-semibold text-secondary pb-1">
                         {project.title}
                       </h3>
                       <p className="text-lg text-gray-600">
