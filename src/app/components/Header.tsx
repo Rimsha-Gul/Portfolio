@@ -8,6 +8,7 @@ const navLinks = [
   { href: "home", label: "Home" },
   { href: "services", label: "Services" },
   { href: "portfolio", label: "Portfolio" },
+  { href: "experience", label: "Experience" },
   { href: "contact", label: "Contact" },
 ];
 
@@ -46,7 +47,7 @@ const Header = () => {
         </nav>
         <div className="lg:hidden">
           <button onClick={toggleMenu}>
-            <HiBars3 className="text-3xl text-turquoise" />
+            <HiBars3 className="text-3xl text-secondary" />
           </button>
         </div>
       </header>

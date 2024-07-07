@@ -19,7 +19,7 @@ const Hero = () => {
         <div className="flex flex-col sm:flex-row gap-6 pt-8 sm:pt-16 justify-center">
           <a
             href="#contact"
-            className="px-8 py-3 uppercase text-white text-lg sm:text-xl lg:text-2xl font-semibold rounded-md bg-gradient-primary shadow-gradient-basic border border-transparent transition duration-200 box-border hover:bg-none hover:text-white hover:border-white hover:shadow-none"
+            className="px-8 py-3 uppercase text-white text-lg sm:text-xl lg:text-2xl font-semibold rounded-md bg-gradient-primary shadow-gradient-primary border border-transparent transition duration-200 box-border hover:bg-none hover:text-white hover:border-white hover:shadow-none"
           >
             Hire Me
           </a>
@@ -27,7 +27,7 @@ const Hero = () => {
             href="/Rimsha_Gul's_Résumé.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-8 py-3 uppercase text-white text-lg sm:text-xl lg:text-2xl font-semibold rounded-md border border-white transition duration-200 box-border hover:bg-gradient-primary hover:border-transparent hover:shadow-gradient-basic"
+            className="px-8 py-3 uppercase text-white text-lg sm:text-xl lg:text-2xl font-semibold rounded-md border border-white transition duration-200 box-border hover:bg-gradient-primary hover:border-transparent hover:shadow-gradient-primary"
           >
             View CV
           </a>
