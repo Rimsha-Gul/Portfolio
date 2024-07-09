@@ -2,7 +2,7 @@
 
 import { FaGraduationCap } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { education } from "@/constants/education";
+import { education } from "@/constants";
 
 const Education = () => {
   return (

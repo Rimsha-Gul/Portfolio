@@ -13,6 +13,7 @@ const config: Config = {
         primary: "#22252c",
         secondary: "#313741",
         turquoise: "#00d7bb",
+        "turquoise-dark": "#02cfb4",
         "light-gray": "#5a5f6b",
       },
       backgroundImage: {
@@ -25,6 +26,7 @@ const config: Config = {
       borderColor: {
         primary: "#00d7bb",
         secondary: "#02cfb4",
+        dark: "#22252c",
       },
       boxShadow: {
         "gradient-primary": "0 0 20px rgba(22, 213, 156, 0.7)",
@@ -42,6 +44,8 @@ const config: Config = {
         primary: "#00d7bb",
         secondary: "#02cfb4",
         dark: "#3b3e31",
+        darker: "#22252c",
+        darkest: "#25292f",
       },
       screens: {
         xxs: "375px",

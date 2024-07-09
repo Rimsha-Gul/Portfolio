@@ -3,14 +3,7 @@
 import { useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import { HiBars3 } from "react-icons/hi2";
-
-const navLinks = [
-  { href: "home", label: "Home" },
-  { href: "services", label: "Services" },
-  { href: "portfolio", label: "Portfolio" },
-  { href: "experience", label: "Experience" },
-  { href: "contact", label: "Contact" },
-];
+import { navLinks } from "@/constants";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

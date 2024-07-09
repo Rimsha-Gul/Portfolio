@@ -3,6 +3,7 @@ import Services from "@/sections/Services";
 import Portfolio from "@/sections/Portfolio";
 import Experience from "@/sections/Experience";
 import Education from "@/sections/Education";
+import HireMe from "@/sections/HireMe";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Portfolio />
       <Experience />
       <Education />
+      <HireMe />
     </main>
   );
 }
