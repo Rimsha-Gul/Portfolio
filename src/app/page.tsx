@@ -4,6 +4,8 @@ import Portfolio from "@/sections/Portfolio";
 import Experience from "@/sections/Experience";
 import Education from "@/sections/Education";
 import HireMe from "@/sections/HireMe";
+import Contact from "@/sections/Contact";
+import Footer from "@/sections/Footer";
 
 export default function Home() {
   return (
@@ -14,6 +16,7 @@ export default function Home() {
       <Experience />
       <Education />
       <HireMe />
+      <Contact />
     </main>
   );
 }

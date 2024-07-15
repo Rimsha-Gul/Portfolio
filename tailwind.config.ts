@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 import defaultTheme from "tailwindcss/defaultTheme";
+import plugin from "tailwindcss/plugin";
 
 const config: Config = {
   content: [
@@ -12,6 +13,7 @@ const config: Config = {
       backgroundColor: {
         primary: "#22252c",
         secondary: "#313741",
+        mint: "#17d397",
         turquoise: "#00d7bb",
         "turquoise-dark": "#02cfb4",
         "light-gray": "#5a5f6b",
@@ -26,12 +28,14 @@ const config: Config = {
       borderColor: {
         primary: "#00d7bb",
         secondary: "#02cfb4",
+        muted: "#58616d",
         dark: "#22252c",
       },
       boxShadow: {
         "gradient-primary": "0 0 20px rgba(22, 213, 156, 0.7)",
         "gradient-secondary":
           "0 0 12px 2px rgba(11, 239, 156, 0.5), 0 0 12px 2px rgba(0, 215, 197, 0.5)",
+        "mint-glow": "0 1px 20px rgba(22, 213, 144, 0.8)",
       },
       colors: {
         primary: "#00d7c5",
@@ -43,9 +47,17 @@ const config: Config = {
       textColor: {
         primary: "#00d7bb",
         secondary: "#02cfb4",
+        muted: "#8491a2",
         dark: "#3b3e31",
         darker: "#22252c",
         darkest: "#25292f",
+      },
+      transitionDuration: {
+        "400": "400ms",
+      },
+      transitionProperty: {
+        gap: "gap",
+        ml: "ml",
       },
       screens: {
         xxs: "375px",
@@ -53,6 +65,16 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addUtilities }) {
+      addUtilities({
+        ".border-gradient": {
+          "border-width": "1px",
+          "border-image-slice": "1",
+          "border-image-source": "linear-gradient(to right, #17D396, #07F7F7)",
+        },
+      });
+    }),
+  ],
 };
 export default config;

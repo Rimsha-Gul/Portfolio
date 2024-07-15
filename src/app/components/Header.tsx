@@ -14,17 +14,17 @@ const Header = () => {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 flex justify-between items-center px-4 pt-4 pb-1 bg-primary bg-opacity-75 backdrop-blur-lg z-30">
+      <header className="fixed top-0 left-0 right-0 flex justify-between items-center px-4 py-3 bg-primary bg-opacity-75 backdrop-blur-lg z-30">
         <ScrollLink
           to="home"
           smooth={true}
           duration={500}
           offset={-90}
-          className="font-pacifico text-5xl text-gradient pr-2 pb-6 cursor-pointer"
+          className="font-pacifico text-5xl text-gradient pr-2 pb-5 cursor-pointer"
         >
           Rimsha Gul
         </ScrollLink>
-        <nav className="hidden lg:flex text-2xl font-bold space-x-6 text-gradient">
+        <nav className="hidden lg:flex font-bold uppercase space-x-6 text-gradient">
           {navLinks.map((link) => (
             <ScrollLink
               key={link.href}
