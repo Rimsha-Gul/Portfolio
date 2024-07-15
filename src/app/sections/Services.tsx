@@ -20,17 +20,17 @@ const Services = () => {
               initial={{ opacity: 0, y: index === 1 ? -20 : 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
-              className="p-2 flex-1 max-w-full lg:max-w-lg flex"
+              className="p-2 flex-1 max-w-full lg:max-w-sm flex"
             >
               <div className="flex-1 flex">
                 <div className="h-full flex flex-col justify-start bg-gray-800 px-4 py-6 xl:py-12 rounded-lg text-center border border-white shadow-gradient-secondary">
-                  <div className="flex justify-center items-center text-6xl xl:text-8xl text-primary pb-6 xl:pb-12">
+                  <div className="flex justify-center items-center text-6xl text-primary pb-6 xl:pb-12">
                     <skill.icon />
                   </div>
-                  <h3 className="text-2xl xl:text-3xl font-medium pb-4 xl:pb-8">
+                  <h3 className="text-2xl font-medium pb-4 xl:pb-8">
                     {skill.title}
                   </h3>
-                  <p className="text-sm xl:text-2xl">{skill.description}</p>
+                  <p>{skill.description}</p>
                 </div>
               </div>
             </motion.div>

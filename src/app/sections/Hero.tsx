@@ -1,4 +1,7 @@
+"use client";
+
 import ParticlesBackground from "@/components/PartclesBackground";
+import { Link as ScrollLink } from "react-scroll";
 
 const Hero = () => {
   return (
@@ -13,21 +16,24 @@ const Hero = () => {
         <h1 className="font-pacifico text-gradient text-5xl md:text-6xl xl:text-7xl font-medium py-6 sm:py-8">
           Rimsha Gul
         </h1>
-        <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-white">
+        <p className="text-xl sm:text-2xl text-white">
           Front-End Developer / Full Stack Developer
         </p>
         <div className="flex flex-col sm:flex-row gap-6 pt-8 sm:pt-16 justify-center">
-          <a
-            href="#contact"
-            className="px-8 py-3 uppercase text-white text-lg sm:text-xl lg:text-2xl font-semibold rounded-md bg-gradient-primary shadow-gradient-primary border border-transparent transition duration-200 box-border hover:bg-none hover:text-white hover:border-white hover:shadow-none"
+          <ScrollLink
+            to="contact"
+            smooth={true}
+            duration={500}
+            offset={-90}
+            className="px-8 py-3 cursor-pointer uppercase text-white text-lg font-semibold rounded-md bg-gradient-primary shadow-gradient-primary border border-transparent transition duration-200 box-border hover:bg-none hover:text-white hover:border-white hover:shadow-none"
           >
             Hire Me
-          </a>
+          </ScrollLink>
           <a
             href="/Rimsha_Gul's_Résumé.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-8 py-3 uppercase text-white text-lg sm:text-xl lg:text-2xl font-semibold rounded-md border border-white transition duration-200 box-border hover:bg-gradient-primary hover:border-transparent hover:shadow-gradient-primary"
+            className="px-8 py-3 uppercase text-white text-lg font-semibold rounded-md border border-white transition duration-200 box-border hover:bg-gradient-primary hover:border-transparent hover:shadow-gradient-primary"
           >
             View CV
           </a>

@@ -2,6 +2,7 @@
 
 import { FaPaperPlane } from "react-icons/fa6";
 import { motion } from "framer-motion";
+import { Link as ScrollLink } from "react-scroll";
 
 const HireMe = () => {
   return (
@@ -28,12 +29,15 @@ const HireMe = () => {
                 together!
               </p>
             </div>
-            <a
-              href="#contact"
-              className="mb-0 lg:mb-12 px-12 py-3 bg-primary text-secondary uppercase text-lg font-semibold hover:bg-turquoise-dark hover:text-darker hover:border hover:border-dark transition-colors duration-300"
+            <ScrollLink
+              to="contact"
+              smooth={true}
+              duration={500}
+              offset={-90}
+              className="mb-0 lg:mb-12 px-12 py-3 bg-primary text-secondary uppercase text-lg font-semibold hover:bg-turquoise-dark hover:text-darker hover:border hover:border-dark transition-colors duration-300 cursor-pointer"
             >
               Hire Me
-            </a>
+            </ScrollLink>
           </motion.div>
         </div>
       </div>
