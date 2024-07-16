@@ -25,7 +25,7 @@ const HireMe = () => {
               </p>
               <p className="text-center max-w-[580px]">
                 I am available for full-time opportunities that align with your
-                business needs. Hire me and let's create something amazing
+                business needs. Hire me and let&apos;s create something amazing
                 together!
               </p>
             </div>

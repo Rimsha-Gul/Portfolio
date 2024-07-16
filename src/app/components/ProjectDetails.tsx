@@ -5,6 +5,7 @@ import Slider, { Settings, LazyLoadTypes } from "react-slick";
 import { useRef } from "react";
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi2";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 interface ModalProps {
   onClose: () => void;
@@ -58,9 +59,11 @@ const ProjectDetails: React.FC<ModalProps> = ({ onClose, project, isOpen }) => {
                       key={index}
                       className="w-full h-full flex items-center justify-center "
                     >
-                      <img
+                      <Image
                         src={image}
                         alt={`${project.title} image ${index + 1}`}
+                        width={865}
+                        height={520}
                         className="w-full h-full object-cover"
                       />
                     </div>
