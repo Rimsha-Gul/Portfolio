@@ -8,6 +8,7 @@ import ProjectDetails from "@/components/ProjectDetails";
 import { TiInfoLarge } from "react-icons/ti";
 import { PiLinkSimpleBold } from "react-icons/pi";
 import { AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 const Portfolio = () => {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
@@ -46,9 +47,11 @@ const Portfolio = () => {
             >
               <div className="relative group flex flex-col items-center w-full">
                 <div className="relative w-full overflow-hidden rounded-lg">
-                  <img
+                  <Image
                     src={project.coverImage}
                     alt={project.title}
+                    width={1024}
+                    height={1024}
                     className="w-full h-full object-cover rounded-lg transition-transform duration-300 transform group-hover:scale-105"
                   />
                   <div className="absolute inset-0 portfolio-hover flex flex-col justify-between px-6 pt-6 pb-8">

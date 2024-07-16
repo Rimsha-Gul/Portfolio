@@ -184,7 +184,7 @@ const Contact = () => {
             )}
             <button
               type="submit"
-              className={`self-center mt-10 px-12 py-4 border-2 border-gradient  uppercase transition duration-300 flex items-center justify-center ${
+              className={`self-center mt-10 px-12 py-4 border-2 border-gradient uppercase transition duration-300 flex items-center justify-center ${
                 loading
                   ? "bg-mint text-darker font-semibold shadow-mint-glow"
                   : "text-primary hover:bg-mint hover:text-darker hover:font-semibold hover:shadow-mint-glow"
