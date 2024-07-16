@@ -23,7 +23,7 @@ const HireMe = () => {
               <p className="text-darker text-2xl xl:text-4xl uppercase font-bold">
                 Hire me for your awesome business
               </p>
-              <p className="text-center max-w-[580px]">
+              <p className="text-darker text-center max-w-[580px]">
                 I am available for full-time opportunities that align with your
                 business needs. Hire me and let&apos;s create something amazing
                 together!
