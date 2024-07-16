@@ -19,23 +19,29 @@ const Header = () => {
           to="home"
           smooth={true}
           duration={500}
-          offset={-90}
-          className="font-pacifico text-5xl text-gradient pr-2 pb-5 cursor-pointer"
+          offset={-76}
+          className="font-pacifico text-4xl text-gradient pr-2 pb-3 cursor-pointer"
         >
           Rimsha Gul
         </ScrollLink>
         <nav className="hidden lg:flex font-bold uppercase space-x-6 text-gradient">
           {navLinks.map((link) => (
-            <ScrollLink
+            <div
               key={link.href}
-              to={link.href}
-              smooth={true}
-              duration={500}
-              offset={-90}
-              className="cursor-pointer"
+              className="flex flex-col items-center link-container"
             >
-              {link.label}
-            </ScrollLink>
+              <ScrollLink
+                key={link.href}
+                to={link.href}
+                smooth={true}
+                duration={500}
+                offset={-76}
+                className="cursor-pointer"
+              >
+                {link.label}
+              </ScrollLink>
+              <div className="underline-gradient"></div>
+            </div>
           ))}
         </nav>
         <div className="lg:hidden">
@@ -47,21 +53,26 @@ const Header = () => {
       <div
         className={`${
           isMenuOpen ? "max-h-screen" : "max-h-0"
-        } fixed left-0 right-0 top-[92px] bg-primary bg-opacity-75 backdrop-blur-lg transition-all duration-500 overflow-hidden z-20`}
+        } fixed left-0 right-0 top-[76px] bg-primary bg-opacity-75 backdrop-blur-lg transition-all duration-500 overflow-hidden z-20`}
       >
-        <nav className="flex flex-col justify-center items-center space-y-4 text-xl font-bold text-gradient p-5">
+        <nav className="flex flex-col justify-center items-center space-y-4 uppercase font-bold text-gradient-vertical p-5">
           {navLinks.map((link) => (
-            <ScrollLink
+            <div
               key={link.href}
-              to={link.href}
-              smooth={true}
-              duration={500}
-              offset={-90}
-              className="cursor-pointer"
-              onClick={toggleMenu}
+              className="flex flex-col items-center link-container"
             >
-              {link.label}
-            </ScrollLink>
+              <ScrollLink
+                to={link.href}
+                smooth={true}
+                duration={500}
+                offset={-76}
+                className="cursor-pointer"
+                onClick={toggleMenu}
+              >
+                {link.label}
+              </ScrollLink>
+              <div className="underline-gradient"></div>
+            </div>
           ))}
         </nav>
       </div>

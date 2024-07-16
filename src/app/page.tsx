@@ -17,6 +17,7 @@ export default function Home() {
       <Education />
       <HireMe />
       <Contact />
+      <Footer />
     </main>
   );
 }

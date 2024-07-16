@@ -77,6 +77,24 @@ body {
     background-clip: text;
     color: transparent;
   }
+
+  .text-gradient-vertical {
+    background: linear-gradient(to bottom, #17d396, #07f7f7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .underline-gradient {
+    background: linear-gradient(to right, #17d396, #07f7f7);
+    height: 2px;
+    width: 0;
+    transition: width 0.3s ease;
+  }
+
+  .link-container:hover .underline-gradient {
+    width: 100%;
+  }
 }
 
 @keyframes expandCenter {

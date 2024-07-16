@@ -24,12 +24,10 @@ const Services = () => {
             >
               <div className="flex-1 flex">
                 <div className="h-full flex flex-col justify-start bg-gray-800 px-4 py-6 xl:py-12 rounded-lg text-center border border-white shadow-gradient-secondary">
-                  <div className="flex justify-center items-center text-6xl text-primary pb-6 xl:pb-12">
+                  <div className="flex justify-center items-center text-6xl text-primary pb-6 xl:pb-6">
                     <skill.icon />
                   </div>
-                  <h3 className="text-2xl font-medium pb-4 xl:pb-8">
-                    {skill.title}
-                  </h3>
+                  <h3 className="text-2xl font-medium pb-4">{skill.title}</h3>
                   <p>{skill.description}</p>
                 </div>
               </div>
