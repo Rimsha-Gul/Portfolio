@@ -31,7 +31,6 @@ const ParticlesBackground = () => {
             interactivity: {
               events: {
                 onClick: {
-                  enable: true,
                   mode: "push",
                 },
                 onHover: {
@@ -67,14 +66,14 @@ const ParticlesBackground = () => {
                   default: "bounce",
                 },
                 random: false,
-                speed: 2,
+                speed: 1,
                 straight: false,
               },
               number: {
                 density: {
                   enable: true,
                 },
-                value: 20,
+                value: 40,
               },
               opacity: {
                 value: 0.5,

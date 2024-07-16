@@ -184,10 +184,14 @@ const Contact = () => {
             )}
             <button
               type="submit"
-              className="self-center mt-10 px-12 py-4 border-2 border-gradient text-primary uppercase transition duration-300 hover:bg-mint hover:text-darker hover:font-semibold hover:shadow-mint-glow flex items-center justify-center"
+              className={`self-center mt-10 px-12 py-4 border-2 border-gradient  uppercase transition duration-300 flex items-center justify-center ${
+                loading
+                  ? "bg-mint text-darker font-semibold shadow-mint-glow"
+                  : "text-primary hover:bg-mint hover:text-darker hover:font-semibold hover:shadow-mint-glow"
+              }`}
             >
               <div
-                className={`h-6 flex items-center justify-center transition-gap duration-300 ${
+                className={`h-6 w-36 flex items-center justify-center transition-gap duration-300 ${
                   loading ? "gap-2" : "gap-0"
                 }`}
               >
@@ -197,7 +201,7 @@ const Contact = () => {
                     loading ? "ml-2" : "ml-0"
                   }`}
                 >
-                  Send Message
+                  {loading ? "Sending" : "Send Message"}
                 </span>
               </div>
             </button>

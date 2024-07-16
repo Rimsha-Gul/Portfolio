@@ -16,7 +16,7 @@ const Hero = () => {
         <h1 className="font-pacifico text-gradient text-5xl md:text-6xl xl:text-7xl font-medium py-6 sm:py-8">
           Rimsha Gul
         </h1>
-        <p className="text-xl sm:text-2xl text-white">
+        <p className="text-xl sm:text-2xl uppercase text-white">
           Front-End Developer / Full Stack Developer
         </p>
         <div className="flex flex-col sm:flex-row gap-6 pt-8 sm:pt-16 justify-center">
@@ -24,7 +24,7 @@ const Hero = () => {
             to="contact"
             smooth={true}
             duration={500}
-            offset={-90}
+            offset={-76}
             className="px-8 py-3 cursor-pointer uppercase text-white text-lg font-semibold rounded-md bg-gradient-primary shadow-gradient-primary border border-transparent transition duration-200 box-border hover:bg-none hover:text-white hover:border-white hover:shadow-none"
           >
             Hire Me
