@@ -12,15 +12,17 @@ const Contact = () => {
     message: "",
   });
 
+  const [submittedName, setSubmittedName] = useState<string>("");
+
   const [errors, setErrors] = useState({
     name: "",
     email: "",
     message: "",
   });
 
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  const [isSubmissionError, setIsSubmissionError] = useState(false);
-  const [loading, setLoading] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState<boolean>(false);
+  const [isSubmissionError, setIsSubmissionError] = useState<boolean>(false);
+  const [loading, setLoading] = useState<boolean>(false);
 
   const handleFocus = (field: string) => {
     setErrors((prevErrors) => ({
@@ -94,8 +96,10 @@ const Contact = () => {
         await emailjs.send(serviceId, templateId, templateParams, {
           publicKey,
         });
+        setSubmittedName(inputValues.name);
         setIsSubmitted(true);
         setIsSubmissionError(false);
+        setInputValues({ name: "", email: "", message: "" });
       } catch (error) {
         console.error("Failed to send message:", error);
         setIsSubmissionError(true);
@@ -161,13 +165,13 @@ const Contact = () => {
                 <div className="flex-grow">
                   {isSubmitted && (
                     <p>
-                      Hi {inputValues.name}, your message has been sent
+                      Hi {submittedName}, your message has been sent
                       successfully!
                     </p>
                   )}
                   {isSubmissionError && (
                     <p>
-                      Sorry {inputValues.name}, there was an issue sending your
+                      Sorry {submittedName}, there was an issue sending your
                       message. Please try again later!
                     </p>
                   )}

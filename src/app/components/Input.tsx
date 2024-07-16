@@ -1,4 +1,4 @@
-import { useState, FocusEvent, ChangeEvent } from "react";
+import { ChangeEvent, FocusEvent, useEffect, useState } from "react";
 
 interface InputProps {
   type?: string;
@@ -26,6 +26,12 @@ const Input = ({
   error,
 }: InputProps) => {
   const [focus, setFocus] = useState(false);
+
+  useEffect(() => {
+    if (!value) {
+      setFocus(false);
+    }
+  }, [value]);
 
   const handleFocus = () => {
     setFocus(true);
