@@ -34,7 +34,7 @@ const HireMe = () => {
               smooth={true}
               duration={500}
               offset={-76}
-              className="mb-0 lg:mb-12 px-12 py-3 bg-primary text-secondary uppercase text-lg font-semibold hover:bg-turquoise-dark hover:text-darker hover:border hover:border-dark transition-colors duration-300 cursor-pointer"
+              className="mb-0 lg:mb-12 px-12 py-3 bg-primary text-secondary uppercase text-lg font-semibold border border-dark hover:bg-turquoise-dark hover:text-darker transition-colors duration-300 cursor-pointer"
             >
               Hire Me
             </ScrollLink>
